@@ -1,6 +1,6 @@
 body{
 	margin: 0;
-	background: radial-gradient(circle at top, #1a0026, #000);
+	background: radial-gradient(circle at top, #750707, #000);
 	color: white;
 	font-family: sans-serif;
 	text-align: center; 
@@ -10,7 +10,7 @@ h1 {margin-top: 20px}
 
 .scene{
 	width: 300px;
-	height: 300px;
+	height: 400px;
 	margin: 60px auto;
 	perspective: 1200px;
 }
@@ -23,15 +23,32 @@ h1 {margin-top: 20px}
 	transition: transform 0.3s;
 }
 
+.prism {
+  cursor: grab;
+  touch-action: none;
+}
+
+.txt {
+    font-family: "Segoe Script", cursive, sans-serif;
+	font-weight: 400;
+	letter-spacing: 0.5px;
+	text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+
+
+
 .prism img{
 	position: absolute;
-	width: 260px;
-	height: 260px;
+	width: 170px;
+	height: 300px;
 	left: 20px;
 	top: 20px;
 	object-fit: cover;
-	border-radius: 15px;
-	box-shadow: 0 0 25px, rgba(255, 200, 255, 0.5);
-	backface-visibility: hidden;
-	opacity: 0.95;
+	opacity: 1;
+  	background: rgba(255,255,255,0.05); /* semi-transparent */
+  	backdrop-filter: blur(40px);          /* blur what’s behind the element */
+  	border-radius: 12px;
+  	box-shadow: 0 0 30px rgba(255,200,255,0.3);
+
 }
